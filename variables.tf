@@ -71,3 +71,10 @@ variable "extra_packages" {
   type        = list(string)
   default     = []
 }
+
+variable "bridge" {
+  description = "The bridge to use for the VM"
+  type        = string
+  default     = "vmnet"
+  
+}

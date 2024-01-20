@@ -28,9 +28,9 @@ packages:
   - qemu-guest-agent
   - iperf3
   %{ for pkg in split("\n", extra_packages ) ~}
-  %{ if pkg != "" ~}
+%{ if pkg != "" ~}
 - ${pkg}
-  %{ endif ~}
+%{ endif ~}
   %{ endfor ~}
 
 mounts:

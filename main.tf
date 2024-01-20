@@ -95,7 +95,7 @@ resource "libvirt_domain" "host" {
     scsi      = true
   }
   network_interface {
-    bridge = "vmnetoffice"
+    bridge = var.bridge
     mac    = var.mac
     wait_for_lease = true
   }
